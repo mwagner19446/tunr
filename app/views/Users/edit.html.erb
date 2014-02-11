@@ -1,0 +1,17 @@
+<h1>TEST</h1>
+
+<form class="action" action="/users/<%=@user.id%>" method="POST">
+  <input type="hidden" name="_method" value="put">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <legend>Update User</legend>
+  <label for "first_name">First Name: </label> <input type="text" name="first_name" value="<%=@user.first_name%>"/> <br />
+  <label for "last_name">Last Name: </label> <input type="text" name="last_name" value="<%=@user.last_name%>"/> <br />
+   <label for "date_of_birth">DOB: </label> <input type="text" name="date_of_birth" value="<%=@user.date_of_birth%>"/> <br />
+   <label for "sex">Gender: </label> <input type="text" name="sex" value="<%=@user.sex%>"/> <br />
+   <label for "email">Email: </label> <input type="text" name="email" value="<%=@user.email%>"/> <br />
+   <label for "facebook_link">Facebook: </label> <input type="text" name="facebook_link" value="<%=@user.facebook_link%>"/> <br />
+   <label for "password">Password: </label> <input type="text" name="password" value="<%=@user.password%>"/> <br />
+
+
+  <button>Update User</button>  
+</form>

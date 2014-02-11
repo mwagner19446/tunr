@@ -1,0 +1,11 @@
+
+<form class= "action" action="/artists" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%=form_authenticity_token%>" />
+  <legend>Create an Artist</legend>
+  <p>
+  <label for="name"> Name: </label>  <input type="text" name="name"/> <br />
+  <label for "genre"> Genre: </label> <input type="text" name="genre"/> <br />
+  <label for "photo_url"> Poster URL: 
+  </label> <input type="text" name="photo_url"/><br />
+  <button>Create New Artist</button>
+</form>

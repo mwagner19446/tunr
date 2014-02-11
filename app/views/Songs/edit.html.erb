@@ -1,0 +1,9 @@
+<form class="action" action="/artists/<%=@artist.id%>/songs/<%=@song.id%>" method="POST">
+  <input type="hidden" name="_method" value="put">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <legend>Update Artist</legend>
+  <label for "title">name: </label> <input type="text" name="title" value="<%=@song.title%>"/> <br />
+  <label for "year">name: </label> <input type="text" name="year" value="<%=@song.year%>"/> <br />
+
+  <button>Update Song</button>  
+</form>

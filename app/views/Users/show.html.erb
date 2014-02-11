@@ -1,0 +1,14 @@
+<h1>Details: <%=@user.first_name%> <%=@user.last_name%> </h1>
+
+First Name: <%=@user.first_name%> <br \>
+Last Name: <%=@user.last_name%> <br \>
+Date of Birth: <%=@user.date_of_birth%> <br \>
+Sex: <%=@user.sex%> <br \>
+Email: <%=@user.email%> <br \>
+Facebook: <%=@user.facebook_link%> <br \>
+Password: <%=@user.password%> <br \>
+
+
+<a href="/users/<%=@user.id%>/edit">Edit</a>
+
+<%= debug(@user) %>

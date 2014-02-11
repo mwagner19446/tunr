@@ -1,0 +1,10 @@
+<form class="action" action="/artists/<%=@artist.id%>" method="POST">
+  <input type="hidden" name="_method" value="put">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <legend>Update Artist</legend>
+  <label for "name">name: </label> <input type="text" name="name" value="<%=@artist.name%>"/> <br />
+  <label for "genre">name: </label> <input type="text" name="genre" value="<%=@artist.genre%>"/> <br />
+
+  <label for "photo_url">Poster_URL: </label> <input type="text" name="photo_url" value="<%=@artist.photo_url%>"/> <br />
+  <button>Update Artist</button>  
+</form>
